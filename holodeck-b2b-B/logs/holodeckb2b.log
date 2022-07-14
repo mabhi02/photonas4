@@ -1865,3 +1865,91 @@
 2022-07-07 16:11:22,025 (Thread-3)[INFO ] org.holodeckb2b.core.HolodeckB2BServer - Server STOPPED
 2022-07-07 16:11:22,026 (Thread-4)[INFO ] org.holodeckb2b.core.workerpool.WorkerPool.hb2b-ebms3-pullers - Worker pool STOPPED
 2022-07-07 16:11:22,026 (Thread-5)[INFO ] org.holodeckb2b.core.workerpool.WorkerPool.hb2b-core - Worker pool STOPPED
+2022-07-12 08:44:11,850 (main)[INFO ] org.holodeckb2b.core.HolodeckB2BServer - Starting server
+2022-07-12 08:44:18,713 (main)[TRACE] org.holodeckb2b.msgproc.AS4.HeaderValidation - Retrieve the factory class for the header validators from configuration
+2022-07-12 08:44:18,936 (main)[TRACE] org.holodeckb2b.msgproc.AS4.HeaderValidation - Retrieve the factory class for the header validators from configuration
+2022-07-12 08:44:19,026 (main)[INFO ] org.holodeckb2b.core.HolodeckB2BCoreImpl - Starting Holodeck B2B Core...
+2022-07-12 08:44:19,029 (main)[TRACE] org.holodeckb2b.core.HolodeckB2BCoreImpl - Initialize the P-Mode manager
+2022-07-12 08:44:19,032 (main)[TRACE] org.holodeckb2b.core.pmode.PModeManager - Load P-Mode storage component
+2022-07-12 08:44:19,034 (main)[DEBUG] org.holodeckb2b.core.pmode.PModeManager - Load installed P-Mode validators
+2022-07-12 08:44:19,041 (main)[INFO ] org.holodeckb2b.core.pmode.PModeManager - Initialized P-Mode manager:
+	P-Mode storage implentation : org.holodeckb2b.common.pmode.InMemoryPModeSet
+	Accept/reject non validable : Reject
+	Registered validators:
+		HB2B Default ebMS3/AS4
+
+2022-07-12 08:44:19,042 (main)[TRACE] org.holodeckb2b.core.HolodeckB2BCoreImpl - Load the event processor
+2022-07-12 08:44:19,057 (main)[TRACE] org.holodeckb2b.core.HolodeckB2BCoreImpl - Initialising event processor : HB2B Sync Event Processor
+2022-07-12 08:44:19,058 (main)[INFO ] org.holodeckb2b.core.HolodeckB2BCoreImpl - Loaded event processor : HB2B Sync Event Processor
+2022-07-12 08:44:19,058 (main)[DEBUG] org.holodeckb2b.core.HolodeckB2BCoreImpl - Load the persistency provider for storing meta-data on message units
+2022-07-12 08:44:19,074 (main)[DEBUG] org.holodeckb2b.core.HolodeckB2BCoreImpl - Using Persistency Provider: HB2B Default Persistency/5.3.2
+2022-07-12 08:44:31,032 (main)[INFO ] org.holodeckb2b.core.HolodeckB2BCoreImpl - Loaded Persistency Provider : HB2B Default Persistency/5.3.2
+2022-07-12 08:44:31,033 (main)[TRACE] org.holodeckb2b.core.HolodeckB2BCoreImpl - Load the certificate manager
+2022-07-12 08:44:31,068 (main)[DEBUG] org.holodeckb2b.core.HolodeckB2BCoreImpl - Using certificate manager: HB2B Default CertManager/5.3.2
+2022-07-12 08:44:31,069 (main)[DEBUG] org.holodeckb2b.security.trust.DefaultCertManager - Reading configuration file at C:\Users\mabhi\Documents\GitHub\photonas4\holodeck-b2b-B\conf\certmanager_config.xml
+2022-07-12 08:44:31,691 (main)[TRACE] org.holodeckb2b.security.trust.DefaultCertManager - Check availability of configured keystores
+2022-07-12 08:44:31,705 (main)[DEBUG] org.holodeckb2b.security.trust.DefaultCertManager - Completed initialisation of the Default Certificate Manager:
+	Revocation check : false
+	Direct trust     : false
+	Key stores: 
+		Private keys  :C:\Users\mabhi\Documents\GitHub\photonas4\holodeck-b2b-B\repository\certs\privatekeys.jks
+		Partner certs :C:\Users\mabhi\Documents\GitHub\photonas4\holodeck-b2b-B\repository\certs\partnerkeys.jks
+		Trust anchors :C:\Users\mabhi\Documents\GitHub\photonas4\holodeck-b2b-B\repository\certs\trustedcerts.jks
+
+2022-07-12 08:44:31,706 (main)[INFO ] org.holodeckb2b.core.HolodeckB2BCoreImpl - Loaded Certficate Manager : HB2B Default CertManager/5.3.2
+2022-07-12 08:44:31,706 (main)[TRACE] org.holodeckb2b.core.HolodeckB2BCoreImpl - Create list of available message delivery methods
+2022-07-12 08:44:31,706 (main)[TRACE] org.holodeckb2b.core.HolodeckB2BCoreImpl - Create list of globally configured event handlers
+2022-07-12 08:44:31,707 (main)[TRACE] org.holodeckb2b.core.HolodeckB2BCoreImpl - Create list of managed worker pools
+2022-07-12 08:44:31,707 (main)[DEBUG] org.holodeckb2b.core.HolodeckB2BCoreImpl - Make Core available to outside world
+2022-07-12 08:44:31,708 (main)[TRACE] org.holodeckb2b.core.HolodeckB2BCoreImpl - Initialize Core worker pool
+2022-07-12 08:44:32,031 (main)[TRACE] org.holodeckb2b.core.HolodeckB2BCoreImpl - Creating new worker pool: hb2b-core
+2022-07-12 08:44:32,038 (main)[TRACE] org.holodeckb2b.core.HolodeckB2BCoreImpl - Starting new worker pool
+2022-07-12 08:44:32,063 (main)[INFO ] org.holodeckb2b.backend.file.SubmitOperation - Configured submitter:
+	Watched directory = C:\Users\mabhi\Documents\GitHub\photonas4\holodeck-b2b-B\data\msg_out
+	Remove payloads = true
+2022-07-12 08:44:32,074 (main)[WARN ] org.holodeckb2b.ui.api.RMIServer - Invalid or no value provided for the "port" parameter (null). Using default port 1701
+2022-07-12 08:44:32,075 (main)[INFO ] org.holodeckb2b.core.workerpool.WorkerPool.hb2b-core - Pool STARTED
+2022-07-12 08:44:32,075 (main)[DEBUG] org.holodeckb2b.core.HolodeckB2BCoreImpl - Added new worker pool: hb2b-core
+2022-07-12 08:44:32,075 (main)[INFO ] org.holodeckb2b.core.HolodeckB2BCoreImpl - Holodeck B2B Core 5.3.2 STARTED.
+2022-07-12 08:44:32,096 (main)[INFO ] org.holodeckb2b.ebms3.module.EbMS3Module - Starting Holodeck B2B ebMS3/AS4 module...
+2022-07-12 08:44:32,096 (main)[TRACE] org.holodeckb2b.ebms3.module.EbMS3Module - Load the ebMS3 Security Provider
+2022-07-12 08:44:32,547 (main)[DEBUG] org.holodeckb2b.ebms3.module.EbMS3Module - Using security provider: HB2B Default Security/5.3.2
+2022-07-12 08:44:32,589 (main)[DEBUG] org.holodeckb2b.ebms3.security.DefaultProvider - Registering BouncyCastle as preferred Java security provider
+2022-07-12 08:44:32,609 (pool-2-thread-1)[TRACE] org.holodeckb2b.core.pmode.PModeManager - Request to add P-Mode
+2022-07-12 08:44:32,610 (pool-2-thread-1)[TRACE] org.holodeckb2b.core.pmode.PModeManager - Getting validator for P-Mode (ex-pm-push) based on MEPBinding: http://docs.oasis-open.org/ebxml-msg/ebms/v3.0/ns/core/200704/push
+2022-07-12 08:44:32,612 (pool-2-thread-1)[TRACE] org.holodeckb2b.core.pmode.PModeManager - Using validator (HB2B Default ebMS3/AS4) for validation of P-Mode (id=ex-pm-push)
+2022-07-12 08:44:32,616 (pool-2-thread-1)[DEBUG] org.holodeckb2b.core.pmode.PModeManager - No errors found in new P-Mode (ex-pm-push)
+2022-07-12 08:44:32,616 (pool-2-thread-1)[TRACE] org.holodeckb2b.core.pmode.PModeManager - Adding to deployed set of P-Modes
+2022-07-12 08:44:32,616 (pool-2-thread-1)[INFO ] org.holodeckb2b.core.pmode.PModeManager - Successfully deployed P-Mode [ex-pm-push]
+2022-07-12 08:44:33,076 (main)[INFO ] org.holodeckb2b.ebms3.security.DefaultProvider - Default Security Provider version 5.3.2 is ready!
+2022-07-12 08:44:33,076 (main)[INFO ] org.holodeckb2b.ebms3.module.EbMS3Module - Succesfully loaded HB2B Default Security/5.3.2 as security provider
+2022-07-12 08:44:33,077 (main)[TRACE] org.holodeckb2b.ebms3.module.EbMS3Module - Check availability of pull configuration file: C:\Users\mabhi\Documents\GitHub\photonas4\holodeck-b2b-B\conf\pulling_configuration.xml
+2022-07-12 08:44:33,095 (main)[TRACE] org.holodeckb2b.ebms3.module.EbMS3Module - Create the pull worker pool
+2022-07-12 08:44:33,095 (main)[TRACE] org.holodeckb2b.core.HolodeckB2BCoreImpl - Creating new worker pool: hb2b-ebms3-pullers
+2022-07-12 08:44:33,096 (main)[TRACE] org.holodeckb2b.core.HolodeckB2BCoreImpl - Starting new worker pool
+2022-07-12 08:44:33,106 (main)[INFO ] org.holodeckb2b.core.workerpool.WorkerPool.hb2b-ebms3-pullers - Pool STARTED
+2022-07-12 08:44:33,106 (main)[DEBUG] org.holodeckb2b.core.HolodeckB2BCoreImpl - Added new worker pool: hb2b-ebms3-pullers
+2022-07-12 08:44:33,106 (main)[INFO ] org.holodeckb2b.ebms3.module.EbMS3Module - Holodeck B2B ebMS3/AS4 module 5.3.2 STARTED.
+2022-07-12 08:44:33,106 (main)[INFO ] org.holodeckb2b.core.HolodeckB2BCoreModule - Holodeck B2B Core Module 5.3.2 STARTED.
+2022-07-12 08:44:33,313 (main)[INFO ] org.holodeckb2b.core.HolodeckB2BServer - Server started successfully
+2022-07-12 08:44:42,081 (pool-2-thread-4)[TRACE] org.holodeckb2b.ui.api.RMIServer - Creating the API implementation
+2022-07-12 08:44:42,083 (pool-2-thread-4)[TRACE] org.holodeckb2b.ui.api.RMIServer - Creating RMI stub for UI access
+2022-07-12 08:44:42,145 (pool-2-thread-4)[TRACE] org.holodeckb2b.ui.api.RMIServer - Creating the RMI registry on port 1701
+2022-07-12 08:44:42,174 (pool-2-thread-4)[FATAL] org.holodeckb2b.ui.api.RMIServer - Could not start the UI API! Error details: Port already in use: 1701; nested exception is: 
+	java.net.BindException: Address already in use: bind
+2022-07-12 12:08:55,424 (Thread-3)[INFO ] org.holodeckb2b.core.HolodeckB2BServer - Shutting down server
+2022-07-12 12:08:55,437 (Thread-3)[DEBUG] org.holodeckb2b.core.HolodeckB2BServer - Shutting down Axis2 components
+2022-07-12 12:08:55,465 (Thread-3)[INFO ] org.holodeckb2b.ebms3.module.EbMS3Module - Holodeck B2B ebMS3/AS4 module STOPPED.
+2022-07-12 12:08:55,465 (Thread-2)[INFO ] org.holodeckb2b.ebms3.module.EbMS3Module - Holodeck B2B ebMS3/AS4 module STOPPED.
+2022-07-12 12:08:55,465 (Thread-3)[INFO ] org.holodeckb2b.core.HolodeckB2BCoreModule - Shutting down Holodeck B2B Core module...
+2022-07-12 12:08:55,465 (Thread-2)[INFO ] org.holodeckb2b.core.HolodeckB2BCoreModule - Shutting down Holodeck B2B Core module...
+2022-07-12 12:08:55,499 (Thread-3)[DEBUG] org.holodeckb2b.core.HolodeckB2BServer - Shutting down HB2B Core components
+2022-07-12 12:08:55,501 (Thread-3)[INFO ] org.holodeckb2b.core.HolodeckB2BCoreImpl - Shutting down Holodeck B2B Core...
+2022-07-12 12:08:55,503 (Thread-3)[TRACE] org.holodeckb2b.core.HolodeckB2BCoreImpl - Stopping worker pools
+2022-07-12 12:08:55,543 (Thread-3)[TRACE] org.holodeckb2b.core.HolodeckB2BCoreImpl - Stopping worker pool: hb2b-ebms3-pullers
+2022-07-12 12:08:55,559 (Thread-3)[TRACE] org.holodeckb2b.core.HolodeckB2BCoreImpl - Stopping worker pool: hb2b-core
+2022-07-12 12:08:55,560 (Thread-3)[DEBUG] org.holodeckb2b.core.HolodeckB2BCoreImpl - Worker pools stopped
+2022-07-12 12:08:55,560 (Thread-3)[INFO ] org.holodeckb2b.core.HolodeckB2BCoreImpl - Holodeck B2B Core STOPPED.
+2022-07-12 12:08:55,561 (Thread-3)[INFO ] org.holodeckb2b.core.HolodeckB2BServer - Server STOPPED
+2022-07-12 12:08:55,579 (Thread-4)[INFO ] org.holodeckb2b.core.workerpool.WorkerPool.hb2b-ebms3-pullers - Worker pool STOPPED
+2022-07-12 12:08:55,582 (Thread-5)[INFO ] org.holodeckb2b.core.workerpool.WorkerPool.hb2b-core - Worker pool STOPPED
